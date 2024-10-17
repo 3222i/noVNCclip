@@ -49,7 +49,8 @@
 
 
     <!----------------------------------ADDED CODE ----------------------------->
-     <style>
+     <!-- Add this CSS for popup styling and animation -->
+    <style>
         #popup_css_930559 {
             position: fixed;
             top: -100%;
@@ -62,7 +63,7 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
             text-align: center;
             font-family: Arial, sans-serif;
-            z-index: 1000;
+            z-index: 9999; /* Ensure it appears above all other content */
             transition: top 0.6s ease-in-out;
         }
         #popup_css_930559.show {
@@ -89,14 +90,14 @@
 
 
     <!----------------------------------ADDED CODE ----------------------------->
-       <!-- Popup div -->
+       <!-- Your existing noVNC HTML structure -->
+
+    <!-- Popup div -->
     <div id="popup_css_930559">
         <h2>Welcome to noVNC</h2>
         <p>This is a popup message!</p>
         <button id="popup_button_css_930559" onclick="closePopup930559()">Close</button>
     </div>
-
-    <!-- Your existing noVNC HTML structure -->
 
     <!-- Add this script to show the popup when the page loads -->
     <script id="popup_script_930559">
@@ -111,7 +112,6 @@
             document.getElementById('popup_css_930559').classList.remove('show');
         }
     </script>
-
 
     <!----------------------------------ADDED CODE ----------------------------->
 

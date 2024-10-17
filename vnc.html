@@ -13,7 +13,7 @@
     or the fragment:
         http://example.com/#host=HOST&port=PORT&encrypt=1
     -->
-    <title>noVNC</title>
+    <title>RDP</title>
 
     <link rel="icon" type="image/x-icon" href="app/images/icons/novnc.ico">
 
@@ -46,9 +46,73 @@
 
     <script type="module" crossorigin="anonymous" src="app/error-handler.js"></script>
     <script type="module" crossorigin="anonymous" src="app/ui.js"></script>
+
+    <!----------------------------------ADDED CODE ----------------------------->
+     <style>
+        #popup_css_930559 {
+            position: fixed;
+            top: -100%;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 300px;
+            padding: 20px;
+            background-color: #fff;
+            border: 2px solid #313131;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            font-family: Arial, sans-serif;
+            z-index: 1000;
+            transition: top 0.6s ease-in-out;
+        }
+        #popup_css_930559.show {
+            top: 20px;
+        }
+        #popup_button_css_930559 {
+            background-color: #313131;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+        #popup_button_css_930559:hover {
+            background-color: #555;
+        }
+    </style>
+
+
+    <!----------------------------------ADDED CODE ----------------------------->
+    
 </head>
 
 <body>
+
+
+    <!----------------------------------ADDED CODE ----------------------------->
+       <!-- Popup div -->
+    <div id="popup_css_930559">
+        <h2>Welcome to noVNC</h2>
+        <p>This is a popup message!</p>
+        <button id="popup_button_css_930559" onclick="closePopup930559()">Close</button>
+    </div>
+
+    <!-- Your existing noVNC HTML structure -->
+
+    <!-- Add this script to show the popup when the page loads -->
+    <script id="popup_script_930559">
+        window.onload = function() {
+            // Show the popup after 1 second
+            setTimeout(function() {
+                document.getElementById('popup_css_930559').classList.add('show');
+            }, 1000);
+        };
+
+        function closePopup930559() {
+            document.getElementById('popup_css_930559').classList.remove('show');
+        }
+    </script>
+
+
+    <!----------------------------------ADDED CODE ----------------------------->
 
     <div id="noVNC_fallback_error" class="noVNC_center">
         <div>

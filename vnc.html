@@ -7,45 +7,46 @@
     Copyright (C) 2019 The noVNC Authors
     noVNC is licensed under the MPL 2.0 (see LICENSE.txt)
     This file is licensed under the 2-Clause BSD license (see LICENSE.txt).
-
     Connect parameters are provided in query string:
         http://example.com/?host=HOST&port=PORT&encrypt=1
     or the fragment:
         http://example.com/#host=HOST&port=PORT&encrypt=1
-    -->
-    <title>RDP</title>
+-->
+<title>Welcome to RDP</title>
 
-    <link rel="icon" type="image/x-icon" href="app/images/icons/novnc.ico">
+<!-- Remove favicon link to hide it -->
+<!-- <link rel="icon" type="image/x-icon" href="app/images/icons/novnc.ico"> -->
 
-    <!-- Apple iOS Safari settings -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<!-- Apple iOS Safari settings -->
+<meta name="viewport" content="width=device-width, maximum-scale=1.0, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
-    <!-- @2x -->
-    <link rel="apple-touch-icon" sizes="40x40" type="image/png" href="app/images/icons/novnc-ios-40.png">
-    <link rel="apple-touch-icon" sizes="58x58" type="image/png" href="app/images/icons/novnc-ios-58.png">
-    <link rel="apple-touch-icon" sizes="80x80" type="image/png" href="app/images/icons/novnc-ios-80.png">
-    <link rel="apple-touch-icon" sizes="120x120" type="image/png" href="app/images/icons/novnc-ios-120.png">
-    <link rel="apple-touch-icon" sizes="152x152" type="image/png" href="app/images/icons/novnc-ios-152.png">
-    <link rel="apple-touch-icon" sizes="167x167" type="image/png" href="app/images/icons/novnc-ios-167.png">
-    <!-- @3x -->
-    <link rel="apple-touch-icon" sizes="60x60" type="image/png" href="app/images/icons/novnc-ios-60.png">
-    <link rel="apple-touch-icon" sizes="87x87" type="image/png" href="app/images/icons/novnc-ios-87.png">
-    <link rel="apple-touch-icon" sizes="120x120" type="image/png" href="app/images/icons/novnc-ios-120.png">
-    <link rel="apple-touch-icon" sizes="180x180" type="image/png" href="app/images/icons/novnc-ios-180.png">
+<!-- @2x Apple touch icons (optional) -->
+<link rel="apple-touch-icon" sizes="40x40" type="image/png" href="app/images/icons/novnc-ios-40.png">
+<link rel="apple-touch-icon" sizes="58x58" type="image/png" href="app/images/icons/novnc-ios-58.png">
+<link rel="apple-touch-icon" sizes="80x80" type="image/png" href="app/images/icons/novnc-ios-80.png">
+<link rel="apple-touch-icon" sizes="120x120" type="image/png" href="app/images/icons/novnc-ios-120.png">
+<link rel="apple-touch-icon" sizes="152x152" type="image/png" href="app/images/icons/novnc-ios-152.png">
+<link rel="apple-touch-icon" sizes="167x167" type="image/png" href="app/images/icons/novnc-ios-167.png">
+<link rel="apple-touch-icon" sizes="60x60" type="image/png" href="app/images/icons/novnc-ios-60.png">
+<link rel="apple-touch-icon" sizes="87x87" type="image/png" href="app/images/icons/novnc-ios-87.png">
+<link rel="apple-touch-icon" sizes="120x120" type="image/png" href="app/images/icons/novnc-ios-120.png">
+<link rel="apple-touch-icon" sizes="180x180" type="image/png" href="app/images/icons/novnc-ios-180.png">
 
-    <!-- Stylesheets -->
-    <link rel="stylesheet" href="app/styles/base.css">
-    <link rel="stylesheet" href="app/styles/input.css">
+<!-- Stylesheets -->
+<link rel="stylesheet" href="app/styles/base.css">
+<link rel="stylesheet" href="app/styles/input.css">
 
-    <!-- Images that will later appear via CSS -->
-    <link rel="preload" as="image" href="app/images/info.svg">
-    <link rel="preload" as="image" href="app/images/error.svg">
-    <link rel="preload" as="image" href="app/images/warning.svg">
+<!-- Images that will later appear via CSS -->
+<link rel="preload" as="image" href="app/images/info.svg">
+<link rel="preload" as="image" href="app/images/error.svg">
+<link rel="preload" as="image" href="app/images/warning.svg">
 
-    <script type="module" crossorigin="anonymous" src="app/error-handler.js"></script>
-    <script type="module" crossorigin="anonymous" src="app/ui.js"></script>
+<!-- JavaScript Modules -->
+<script type="module" crossorigin="anonymous" src="app/error-handler.js"></script>
+<script type="module" crossorigin="anonymous" src="app/ui.js"></script>
+
 
     <!----------------------------------ADDED CODE ----------------------------->
      <style>
@@ -130,7 +131,7 @@
 
             <div class="noVNC_scroll">
 
-            <h1 class="noVNC_logo" translate="no"><span>no</span><br>VNC</h1>
+            <h1 class="noVNC_logo" translate="no"><span></span><br>RDP</h1>
 
             <hr>
 

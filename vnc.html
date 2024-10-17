@@ -1,44 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" class="noVNC_loading">
 <head>
-    <title>noVNC</title>
-    <link rel="icon" type="image/x-icon" href="app/images/icons/novnc.ico">
-    <meta name="theme-color" content="#313131">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
-    <!-- Add this CSS for popup styling and animation -->
-    <style>
-        #popup {
-            position: fixed;
-            top: -100%;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 300px;
-            padding: 20px;
-            background-color: #fff;
-            border: 2px solid #313131;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            text-align: center;
-            font-family: Arial, sans-serif;
-            z-index: 1000;
-            transition: top 0.6s ease-in-out;
-        }
-        #popup.show {
-            top: 20px;
-        }
-        #popup button {
-            background-color: #313131;
-            color: #fff;
-            border: none;
-            padding: 10px 20px;
-            cursor: pointer;
-        }
-        #popup button:hover {
-            background-color: #555;
-        }
-    </style>
     <!--
     noVNC example: simple example using default UI
     Copyright (C) 2019 The noVNC Authors
@@ -103,7 +66,7 @@
 
             <div class="noVNC_scroll">
 
-            <h1 class="noVNC_logo" translate="no"><span></span><br>RDP</h1>
+            <h1 class="noVNC_logo" translate="no"><span>no</span><br>VNC</h1>
 
             <hr>
 
@@ -117,28 +80,7 @@
                 <input type="image" alt="Keyboard" src="app/images/keyboard.svg"
                     id="noVNC_keyboard_button" class="noVNC_button" title="Show Keyboard">
             </div>
-              <!-- Popup div -->
-    <div id="popup">
-        <h2>Welcome to noVNC</h2>
-        <p>This is a popup message!</p>
-        <button onclick="closePopup()">Close</button>
-    </div>
 
-    <!-- Your existing noVNC HTML structure -->
-
-    <!-- Add this script to show the popup when the page loads -->
-    <script>
-        window.onload = function() {
-            // Show the popup after 1 second
-            setTimeout(function() {
-                document.getElementById('popup').classList.add('show');
-            }, 1000);
-        };
-
-        function closePopup() {
-            document.getElementById('popup').classList.remove('show');
-        }
-    </script>
             <!-- Extra manual keys -->
             <input type="image" alt="Extra keys" src="app/images/toggleextrakeys.svg"
                 id="noVNC_toggle_extra_keys_button" class="noVNC_button"

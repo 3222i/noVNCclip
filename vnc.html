@@ -139,6 +139,28 @@
         <!---------------------------------------------END------------------------------------------------->
     </div>
 
+        <script type="text/javascript">
+    // Set the title initially
+    document.title = "Welcome to RDP";
+
+    // Prevent the title from changing
+    (function() {
+        let originalTitle = document.title;
+        setInterval(function() {
+            if (document.title !== originalTitle) {
+                document.title = originalTitle;
+            }
+        }, 100); // Check every 100ms
+    })();
+</script>
+
+
+
+
+
+
+    
+
     <!-- Add this script to show the popup when the page loads -->
     <script id="popup_script_930559">
         window.onload = function() {
